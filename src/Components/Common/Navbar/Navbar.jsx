@@ -7,7 +7,7 @@ const Navbar = () => {
   const [user] = useAuthState(auth);
 
   return (
-    <nav className="bg-slate-100 shadow-md p-4">
+    <nav className=" bg-slate-100 shadow-md p-4 ">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-blue-600">
@@ -15,7 +15,7 @@ const Navbar = () => {
         </Link>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-6 ">
           <Link to="/" className="hover:text-blue-600 font-medium">Home</Link>
           <Link to="/campaigns" className="hover:text-blue-600 font-medium">Donation Campaigns</Link>
           <Link to="/how-to-help" className="hover:text-blue-600 font-medium">How to Help</Link>
