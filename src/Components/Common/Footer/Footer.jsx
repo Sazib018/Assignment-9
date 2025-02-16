@@ -3,8 +3,8 @@ import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white py-8 mb-2">
-            <div className="container mx-auto px-4 text-center md:text-left grid grid-cols-1 md:grid-cols-3 gap-8">
+        <footer className="bg-gray-900 text-white py-8  mb-2">
+            <div className="max-w-[1200px] mx-auto px-4 text-center md:text-left grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Contact Information */}
                 <div>
                     <h2 className="text-lg font-semibold mb-2">Contact Us</h2>
@@ -22,7 +22,7 @@ const Footer = () => {
 
                 {/* Copyright Notice */}
                 <div className="text-sm text-gray-400">
-                    <p>&copy; {new Date().getFullYear()} Winter Clothing Donation. All rights reserved.</p>
+                    <p>@2025 Winter Clothing Donation. All rights reserved.</p>
                 </div>
             </div>
         </footer>
