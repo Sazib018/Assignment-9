@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Dhaka Winter Relief Drive",
+      "image": "https://example.com/dhaka-relief.jpg",
+      "description": "Providing warm clothes to underprivileged communities in Dhaka.",
+      "status": "Ongoing",
+      "contactinfo": "contact@dhakarelief.org",
+      "division": "Dhaka"
+    },
+    {
+      "id": 2,
+      "title": "Chattogram Winter Aid",
+      "image": "https://example.com/chattogram-aid.jpg",
+      "description": "Distributing blankets and sweaters to those in need in Chattogram.",
+      "status": "Upcoming",
+      "contactinfo": "support@ctgwinteraid.com",
+      "division": "Chattogram"
+    },
+    {
+      "id": 3,
+      "title": "Rajshahi Warmth Initiative",
+      "image": "https://example.com/rajshahi-warmth.jpg",
+      "description": "Ensuring no one in Rajshahi suffers from winter chills.",
+      "status": "Completed",
+      "contactinfo": "help@rajshahiwarmth.org",
+      "division": "Rajshahi"
+    },
+    {
+      "id": 4,
+      "title": "Khulna Blanket Distribution",
+      "image": "https://example.com/khulna-blanket.jpg",
+      "description": "A campaign to provide blankets and woolen clothes in Khulna.",
+      "status": "Ongoing",
+      "contactinfo": "info@khulnadonations.com",
+      "division": "Khulna"
+    },
+    {
+      "id": 5,
+      "title": "Barishal Winter Help",
+      "image": "https://example.com/barishal-winter.jpg",
+      "description": "Helping the underprivileged of Barishal with warm clothing.",
+      "status": "Upcoming",
+      "contactinfo": "barishalhelp@gmail.com",
+      "division": "Barishal"
+    },
+    {
+      "id": 6,
+      "title": "Sylhet Cold Weather Assistance",
+      "image": "https://example.com/sylhet-assistance.jpg",
+      "description": "Collecting and distributing winter essentials in Sylhet.",
+      "status": "Completed",
+      "contactinfo": "sylhetassist@ngo.org",
+      "division": "Sylhet"
+    }
+  ]
+  
