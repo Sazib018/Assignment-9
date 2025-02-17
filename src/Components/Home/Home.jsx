@@ -11,9 +11,7 @@ import Navbar from '../Common/Navbar/Navbar';
 const Home = () => {
   return (
     <div>
-      <div>
-      <Navbar></Navbar>
-      </div>
+      
       <div className="max-w-[1150px] mx-auto p-4">
         <div>
           <Banner></Banner>
@@ -35,9 +33,7 @@ const Home = () => {
           <RecentDonations></RecentDonations>
         </div>
       </div>
-      <div>
-        <Footer></Footer>
-      </div>
+     
     </div>
   );
 };
