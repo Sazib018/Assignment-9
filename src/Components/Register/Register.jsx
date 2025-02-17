@@ -88,7 +88,7 @@ const Register = () => {
                 className="absolute inset-y-0 right-3 flex items-center text-gray-500"
                 onClick={() => setShowPassword(!showPassword)}
               >
-                {showPassword ? <IoIosEye size={20} /> : <IoIosEyeOff  size={20} />}
+                {showPassword ? <IoIosEye size={25} /> : <IoIosEyeOff  size={25} />}
               </button>
             </div>
             {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
