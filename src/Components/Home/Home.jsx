@@ -6,6 +6,7 @@ import Donor from './Donor/Donor';
 import RecentDonations from './Recent Donations/RecentDonations';
 import About from './About/About';
 import Navbar from '../Common/Navbar/Navbar';
+import DonationCampaign from '../Pages/DonationCampain/DonationCampain';
 
 
 const Home = () => {

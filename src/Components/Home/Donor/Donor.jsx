@@ -14,7 +14,7 @@ const Donor = () => {
                             "I donated my old winter clothes, and it truly helped those in need. A fantastic initiative!"
                         </p>
                         <h4 className="mt-4 font-semibold text-blue-700">
-                            - Rafi Ahmed
+                             Rafi Ahmed
                         </h4>
                     </div>
 
@@ -23,7 +23,7 @@ const Donor = () => {
                             "It feels great to help those suffering in the cold. I will contribute every year!"
                         </p>
                         <h4 className="mt-4 font-semibold text-blue-700">
-                            - Nusrat Jahan
+                             Nusrat Jahan
                         </h4>
                     </div>
                 </div>

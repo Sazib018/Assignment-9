@@ -6,12 +6,18 @@ import Home from "../Components/Home/Home";
 import DonationCampain from "../Components/Pages/DonationCampain/DonationCampain";
 import Howtohelp from "../Components/Pages/Howtohelp/Howtohelp";
 import Dashboard from "../Components/Pages/Dashboard/Dashboard";
+import DonationDetails from "../Components/Pages/DonationCampain/DonationDetails/DonationDetails";
+import DonorForm from "../Components/Pages/DonationCampain/DonorForm/DonorForm";
+import Error from "../Components/Home/ErrorPage/Error";
+
+
 
 
 export const router = createBrowserRouter([
     {
         path:"/",
         element:<MainLayout></MainLayout>,
+        errorElement:<Error></Error>,
         children:[
             {
                 path:"/",
@@ -21,13 +27,18 @@ export const router = createBrowserRouter([
                 path:"/donationcampain",
                 element:<DonationCampain></DonationCampain>
             },
-            {
-                path:"/howtohelp",
-                element:<Howtohelp></Howtohelp>
-            },
+            
             {
                 path:"/dashboard",
                 element:<Dashboard></Dashboard>
+            },
+            {
+                path:"/donationdetails/:id",
+                element:<DonationDetails></DonationDetails>
+            },
+            {
+                path:"/donorform",
+                element:<DonorForm></DonorForm>
             },
         ]
     },

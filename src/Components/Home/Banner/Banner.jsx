@@ -6,14 +6,9 @@ import 'swiper/css/autoplay';
 
 const BannerSlider = () => {
   const slides = [
-    { img: "https://i.ibb.co.com/CKsMzZXM/download.jpg",
-      text: 'Spread Warmth This Winter – Donate Today!',},
-
-    { img: "https://i.ibb.co.com/qLyyyHdv/images-1.jpg" ,
-      text: 'Your Old Clothes Can Make a Difference!', },
-
-    { img: "https://i.ibb.co.com/3yLrZ5zD/images.jpg",
-        text: 'Join Hands to Help Those in Need!',},
+    { id: 1, img: "https://i.ibb.co.com/CKsMzZXM/download.jpg", text: 'Spread Warmth This Winter – Donate Today!' },
+    { id: 2, img: "https://i.ibb.co.com/qLyyyHdv/images-1.jpg", text: 'Your Old Clothes Can Make a Difference!' },
+    { id: 3, img: "https://i.ibb.co.com/3yLrZ5zD/images.jpg", text: 'Join Hands to Help Those in Need!' },
   ];
 
   return (

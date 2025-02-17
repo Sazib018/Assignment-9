@@ -37,7 +37,7 @@ const Register = () => {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(userCredential.user, { displayName: name, photoURL });
       toast.success("Registration Successful!");
-      navigate("/");
+      navigate("/donationcampain");
     } catch (error) {
       toast.error(error.message);
     }
