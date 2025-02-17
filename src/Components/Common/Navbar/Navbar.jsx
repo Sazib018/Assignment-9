@@ -21,10 +21,9 @@ const Navbar = () => {
           <li><NavLink to="/" className="hover:text-blue-600">Home</NavLink></li>
           <li><NavLink to="/donationcampain" className="hover:text-blue-600">Donation Campaigns</NavLink></li>
           <li><NavLink to="/howtohelp" className="hover:text-blue-600">How to Help</NavLink></li>
-          <li><NavLink to="/dashboard" className="hover:text-blue-600">Dashboard</NavLink></li>
+          {user && <li><NavLink to="/dashboard" className="hover:text-blue-600">Dashboard</NavLink></li>}
         </ul>
 
-        
         <div className="hidden md:flex items-center space-x-4">
           {user ? (
             <>
@@ -47,7 +46,6 @@ const Navbar = () => {
           )}
         </div>
 
-      
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -56,12 +54,9 @@ const Navbar = () => {
       {isOpen && (
         <ul className="md:hidden flex flex-col items-center bg-white shadow-md absolute w-full left-0 top-[64px] space-y-4 py-4">
           <li><NavLink to="/" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>Home</NavLink></li>
-
           <li><NavLink to="/donationcampain" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>Donation Campaigns</NavLink></li>
-
           <li><NavLink to="/howtohelp" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>How to Help</NavLink></li>
-          
-          <li><NavLink to="/dashboard" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>Dashboard</NavLink></li>
+          {user && <li><NavLink to="/dashboard" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>Dashboard</NavLink></li>}
 
           {user ? (
             <div className="flex flex-col items-center space-y-4">
