@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const DonorForm = () => {
@@ -55,6 +55,7 @@ const DonorForm = () => {
 
         <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded-md">Submit Donation</button>
       </form>
+      <ToastContainer position='top-right'></ToastContainer>
     </div>
   );
 };

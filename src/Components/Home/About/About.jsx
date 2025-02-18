@@ -2,16 +2,26 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="px-4 md:px-8">
-            <section className="mt-12 text-center max-w-3xl mx-auto">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
-                    About Us
-                </h2>
-                <p className="mt-4 text-gray-700 text-lg md:text-xl leading-relaxed">
-                    Our mission is to bring warmth to the cold. You can easily donate your unwanted winter clothes and help our collection reach the underprivileged. It is important to wear winter clothes to help prevent hypothermia. Winter clothes can also help to protect you from the elements, such as wind, rain, and snow. This is important because exposure to the elements can make you feel colder and can also lead to health problems.
-                </p>
-            </section>
-        </div>
+        <section className="flex flex-col md:flex-row items-center justify-between bg-blue-100 mt-20 h-[500px] p-8 shadow-lg shadow-blue-400 rounded-2xl ">
+            
+      {/* Left Side  */}
+      <div className="md:w-1/2 text-center md:text-left space-y-4">
+        <h2 className="text-3xl font-bold text-gray-800">About Winter Donation</h2>
+        <p className="text-gray-600">
+          Every winter, many underprivileged people suffer from the extreme cold. Our Winter Clothing Donation campaign aims to provide warmth and comfort to those in need. Join us in making a difference.
+        </p>
+        <button className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">View More</button>
+      </div>
+      
+      {/* Right Side */}
+      <div className="md:w-1/2 h-full mt-6 md:mt-0 flex justify-center">
+        <img 
+          src="https://i.ibb.co.com/dwRk8xH1/cc.jpg" 
+          alt="Winter Donation" 
+          className="rounded-xl shadow-md"
+        />
+      </div>
+    </section>
     );
 };
 

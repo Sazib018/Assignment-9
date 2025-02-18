@@ -1,43 +1,49 @@
 import React from 'react';
+import { Package, CheckCircle, Users, Bell } from "lucide-react";
 
 const Work = () => {
+    const steps = [
+        {
+          icon: <Package size={40} className="text-blue-600" />, 
+          title: "Donate Clothes",
+          description: "Collect your unused but usable winter clothes and drop them off at our collection center or request a pickup.",
+        },
+        {
+          icon: <CheckCircle size={40} className="text-green-600" />, 
+          title: "Collection & Verification",
+          description: "Our team collects and verifies the donated clothes to ensure they are safe and clean for the needy.",
+        },
+        {
+          icon: <Users size={40} className="text-purple-600" />, 
+          title: "Distribution",
+          description: "The donated clothes are distributed to underprivileged people through specific campaigns.",
+        },
+        {
+          icon: <Bell size={40} className="text-yellow-600" />, 
+          title: "Updates & Acknowledgement",
+          description: "You will receive updates on where your donation went, along with gratitude messages shared on our platform.",
+        },
+      ];
     return (
-        <div className="px-4 md:px-8">
-            <section className="mt-12 text-center max-w-5xl mx-auto">
-                <h2 className="text-2xl md:text-3xl font-bold text-blue-700">
-                    How does it work?
-                </h2>
-
-                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    <div className="p-6 bg-gray-100 rounded-lg border-blue-400 shadow-lg shadow-blue-400">
-                        <h3 className="text-lg md:text-xl font-semibold text-blue-700">
-                            1. Donate
-                        </h3>
-                        <p className="text-gray-600">
-                            Drop off your old or new winter clothing at our collection point.
-                        </p>
-                    </div>
-
-                    <div className="p-6 bg-gray-100 rounded-lg border-blue-400 shadow-lg shadow-blue-400">
-                        <h3 className="text-lg md:text-xl font-semibold text-blue-700">
-                            2. Collection Point
-                        </h3>
-                        <p className="text-gray-600">
-                            Donate winter clothes by visiting our various collection points.
-                        </p>
-                    </div>
-
-                    <div className="p-6 bg-gray-100 rounded-lg border-blue-400 shadow-lg shadow-blue-400">
-                        <h3 className="text-lg md:text-xl font-semibold text-blue-700">
-                            3. Support Areas
-                        </h3>
-                        <p className="text-gray-600">
-                            We deliver to Dhaka, Chattogram, Rajshahi and other regions.
-                        </p>
-                    </div>
-                </div>
-            </section>
+        <section className="py-16 mt-20">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl font-bold text-gray-800 mb-8">How It Works</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="bg-blue-100 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-2"
+            >
+              <div className="flex justify-center mb-4">{step.icon}</div>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                {step.title}
+              </h3>
+              <p className="text-gray-600">{step.description}</p>
+            </div>
+          ))}
         </div>
+      </div>
+    </section>
     );
 };
 
