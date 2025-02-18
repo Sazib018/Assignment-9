@@ -4,11 +4,11 @@ import Register from "../Components/Register/Register";
 import MainLayout from "../Components/Layouts/MainLayout";
 import Home from "../Components/Home/Home";
 import DonationCampain from "../Components/Pages/DonationCampain/DonationCampain";
-import Howtohelp from "../Components/Pages/Howtohelp/Howtohelp";
 import Dashboard from "../Components/Pages/Dashboard/Dashboard";
 import DonationDetails from "../Components/Pages/DonationCampain/DonationDetails/DonationDetails";
 import DonorForm from "../Components/Pages/DonationCampain/DonorForm/DonorForm";
 import Error from "../Components/Home/ErrorPage/Error";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -34,7 +34,11 @@ export const router = createBrowserRouter([
             },
             {
                 path:"/donationdetails/:id",
-                element:<DonationDetails></DonationDetails>
+                element:(
+                    <PrivateRoute>
+                        <DonationDetails></DonationDetails>
+                    </PrivateRoute>
+                ),
             },
             {
                 path:"/donorform",
