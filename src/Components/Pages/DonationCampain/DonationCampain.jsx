@@ -14,7 +14,6 @@ const DonationCampaign = () => {
             .then((data) => setDonationData(data))
             .catch((error) => console.error("Error Data:", error));
 
-        // ইউজার লগ ইন চেক করা হচ্ছে
         onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
         });
@@ -23,9 +22,9 @@ const DonationCampaign = () => {
 
     const handleDonateClick = (id) => {
         if (!user) {
-            navigate("/login"); // যদি ইউজার লগ ইন না করা থাকে, তাহলে login পেজে পাঠাবে
+            navigate("/login");
         } else {
-            navigate(`/donationdetails/${id}`); // লগ ইন থাকলে donation details এ যাবে
+            navigate(`/donationdetails/${id}`);
         }
     };
 

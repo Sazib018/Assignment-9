@@ -58,8 +58,6 @@ const DonationDetails = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     );
 };

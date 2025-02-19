@@ -11,8 +11,6 @@ import Error from "../Components/Home/ErrorPage/Error";
 import PrivateRoute from "./PrivateRoute";
 
 
-
-
 export const router = createBrowserRouter([
     {
         path:"/",
