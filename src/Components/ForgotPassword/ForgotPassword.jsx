@@ -27,7 +27,7 @@ const ForgotPassword = () => {
       />
       <button
         onClick={handleResetPassword}
-        className="bg-blue-500 text-white px-4 py-2"
+        className="bg-blue-500 rounded-lg text-white px-4 py-2"
       >
         Reset Password
       </button>
