@@ -9,6 +9,7 @@ import DonationDetails from "../Components/Pages/DonationCampain/DonationDetails
 import DonorForm from "../Components/Pages/DonationCampain/DonorForm/DonorForm";
 import Error from "../Components/Home/ErrorPage/Error";
 import PrivateRoute from "./PrivateRoute";
+import ForgotPassword from "../Components/ForgotPassword/ForgotPassword";
 
 
 export const router = createBrowserRouter([
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
     {
         path:"/login",
         element:<Login></Login>
+    },
+    {
+        path:"/forgotpassword",
+        element:<ForgotPassword></ForgotPassword>
     },
     {
         path:"/register",

@@ -4,8 +4,7 @@ const Footer = () => {
   return (
     <footer className="px-6 pt-8 lg:px-12 bg-gray-900 text-gray-300 border-t-2 border-gray-700">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
-        
-        {/* Logo & About */}
+  
         <div className="sm:col-span-2">
           <a href="#" className="inline-flex items-center">
             <img src="https://mcqmate.com/public/images/logos/60x60.png" alt="logo" className="h-10 w-10" />
@@ -18,7 +17,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Quick Links */}
         <div className="flex flex-col gap-2 text-sm">
           <p className="text-base font-bold tracking-wide text-white">Quick Links</p>
           <a href="#" className="hover:text-blue-400">Home</a>
@@ -27,7 +25,6 @@ const Footer = () => {
           <a href="#" className="hover:text-blue-400">Contact</a>
         </div>
 
-        {/* Social Media & Contact */}
         <div>
           <p className="text-base font-bold tracking-wide text-white">Follow Us</p>
           <div className="flex gap-4 mt-3 text-xl">
@@ -37,14 +34,12 @@ const Footer = () => {
           </div>
           <p className="mt-4 text-base font-bold tracking-wide text-white">Contact Us</p>
           <div className="flex flex-col gap-1">
-            <p>Email: <a href="mailto:info@winterwarmth.com" className="hover:text-blue-400">info@winterwarmth.com</a></p>
+            <p>Email: <a href="mailto:info@winterwarmth.com" className="hover:text-blue-400">mahiburislamsazib@gmail.com</a></p>
             <p>Phone: <a href="tel:+8801234567890" className="hover:text-blue-400">+880 123 456 7890</a></p>
           </div>
         </div>
-
       </div>
 
-      {/* Copyright */}
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t border-gray-700 lg:flex-row">
         <p className="text-sm text-gray-500">© {new Date().getFullYear()} Winter Warmth. All rights reserved.</p>
         <ul className="flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-5">

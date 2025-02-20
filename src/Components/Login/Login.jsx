@@ -41,9 +41,9 @@ const Login = () => {
         <form onSubmit={handleLogin}>
           <div className="mb-4">
             <label className="block text-gray-700">Email:</label>
-            <input 
-              type="email" 
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none" 
+            <input
+              type="email"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -52,9 +52,9 @@ const Login = () => {
           </div>
           <div className="mb-4">
             <label className="block text-gray-700">Password:</label>
-            <input 
-              type="password" 
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none" 
+            <input
+              type="password"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none"
               placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -62,10 +62,12 @@ const Login = () => {
             />
           </div>
           <div className="mb-4 text-right">
-            <Link to="/forgot-password" className="text-blue-500">Forgot Password?</Link>
+            <Link to={`/forgotpassword?email=${email}`} className="text-blue-500">
+              Forget Password?
+            </Link>
           </div>
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
             Login
           </button>
@@ -74,8 +76,8 @@ const Login = () => {
           <p>Don't have an account? <Link to="/register" className="text-blue-500">Register</Link></p>
         </div>
         <div className="mt-4 text-center">
-          <button 
-            onClick={handleGoogleLogin} 
+          <button
+            onClick={handleGoogleLogin}
             className="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600">
             Login with Google
           </button>
