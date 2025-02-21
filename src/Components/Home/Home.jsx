@@ -1,12 +1,9 @@
 import React from 'react';
-import Footer from '../Common/Footer/Footer';
 import Banner from './Banner/Banner';
 import Work from './Work/Work';
 import Donor from './Donor/Donor';
 import RecentDonations from './Recent Donations/RecentDonations';
 import About from './About/About';
-import Navbar from '../Common/Navbar/Navbar';
-import DonationCampaign from '../Pages/DonationCampain/DonationCampain';
 
 
 const Home = () => {
