@@ -61,24 +61,31 @@ const Login = () => {
               required
             />
           </div>
-          <div className="mb-4 text-right">
-            <Link to={`/forgotpassword?email=${email}`} className="text-blue-500">
-              Forget Password?
+          <div className="text-sm text-gray-600">
+            <Link
+              to={`/forgot-password?email=${encodeURIComponent(email)}`}
+              className="label-text-alt text-blue-500 hover:underline"
+            >
+              Forgot password?
             </Link>
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+            className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
+          >
             Login
           </button>
         </form>
         <div className="mt-4 text-center">
-          <p>Don't have an account? <Link to="/register" className="text-blue-500">Register</Link></p>
+          <p>
+            Don't have an account? <Link to="/register" className="text-blue-500">Register</Link>
+          </p>
         </div>
         <div className="mt-4 text-center">
           <button
             onClick={handleGoogleLogin}
-            className="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600">
+            className="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600"
+          >
             Login with Google
           </button>
         </div>

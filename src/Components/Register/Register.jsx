@@ -16,7 +16,7 @@ const Register = () => {
   const navigate = useNavigate();
   const provider = new GoogleAuthProvider();
 
- 
+  // ✅ Password validation function
   const validatePassword = (password) => {
     if (password.length < 6) return "Password must be at least 6 characters long";
     if (!/[A-Z]/.test(password)) return "Password must contain at least one uppercase letter";
@@ -24,25 +24,30 @@ const Register = () => {
     return "";
   };
 
-
+  // ✅ Handle Register function
   const handleRegister = async (e) => {
     e.preventDefault();
+    setError("");
+
     const passwordError = validatePassword(password);
     if (passwordError) {
       setError(passwordError);
       toast.error(passwordError);
       return;
     }
+
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(userCredential.user, { displayName: name, photoURL });
       toast.success("Registration Successful!");
       navigate("/donationcampain");
     } catch (error) {
+      setError(error.message);
       toast.error(error.message);
     }
   };
 
+  // ✅ Handle Google Sign-in
   const handleGoogleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
@@ -51,6 +56,7 @@ const Register = () => {
       toast.success("Logged in with Google!");
       navigate("/");
     } catch (error) {
+      setError(error.message);
       toast.error(error.message);
     }
   };

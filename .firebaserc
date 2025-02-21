@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "assignment-9-ca7c5",
-    "assignment-9-ca7c5": "assignment-9-ca7c5"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "assignment-9-ca7c5"
+  }
 }
