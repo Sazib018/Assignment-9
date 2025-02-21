@@ -11,8 +11,8 @@ const Dashboard = () => {
         <div className="text-center">
           <img src={user.photoURL} alt="User" className="w-16 h-16 rounded-full mx-auto" />
           <h2 className="text-xl font-bold">{user.displayName}</h2>
-         <Link to={"/"}> <button className="px-4 py-2 bg-red-500 text-white rounded-md mt-2">
-            Go To Home
+         <Link to={"/updateProfile"}> <button className="px-4 py-2 bg-red-500 text-white rounded-md mt-2">
+         Update Profile
           </button></Link>
         </div>
       ) : null}
